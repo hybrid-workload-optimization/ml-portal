@@ -35,7 +35,7 @@ public class MLPortalController extends CommonController {
 	 * ML 리스트
 	 * @param pageRequest
 	 */
-	@Operation(summary = "ML 리스트", description = "ML 리스트 요청")
+	@Operation(summary = "ML 리스트", description = "ML 리스트 요청 ")
 	@PostMapping("/ml/list")
 	public ResponseWrapper<Object> mlList(@RequestBody ListArg param) {
 		return new ResponseWrapper<>(apiService.getMlList(param));

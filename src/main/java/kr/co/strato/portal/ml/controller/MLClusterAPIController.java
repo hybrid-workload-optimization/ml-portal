@@ -32,7 +32,7 @@ public class MLClusterAPIController {
 	@Operation(summary = "Prometheus URL", description = "클러스터 별 Prometheus URL 요청")
 	@GetMapping("/api/v1/ml/cluster/{clusterId}/prometheusUrl")
 	public ResponseWrapper<String> getPrometheusUrl(@PathVariable("clusterId") Long clusterId) {
-		String url = mlClusterService.getPrometheusUrl(clusterId);
+		String url = mlClusterService.getPrometheusUrl(clusterId); 
 		return new ResponseWrapper<>(url);
 	}
 	
