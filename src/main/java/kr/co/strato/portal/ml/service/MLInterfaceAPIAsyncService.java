@@ -62,7 +62,7 @@ public class MLInterfaceAPIAsyncService {
 			String newMlId = genMlId();
 			applyDto.setMlId(newMlId);
 			
-			isNew = true;
+			isNew = true; 
 		} else {
 			MLEntity entity = mlDomainService.get(applyDto.getMlId());
 			clusterIdx = entity.getClusterIdx();
