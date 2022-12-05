@@ -50,7 +50,11 @@ public class MLClusterAPIAsyncService {
 	
 	private KubernetesClient client;
 	
-	
+	/**
+	 * 클러스터 메트릭 제공을 위한 프로메테우스 접속 url 조회
+	 * @param clusterId
+	 * @return
+	 */
 	public String getPrometheusUrl(Long clusterId) {
 		/*
 		MLClusterEntity entity = mlClusterDomainService.get(clusterId);
